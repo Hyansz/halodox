@@ -88,7 +88,7 @@ export default function Footer(props) {
                                 <a href="#footer" className="text-reset">
                                 PT Media Dokter Investama <br />
                                 Jl. H.R. Rasuna Said Kav B32-33, Jakarta Selatan
-                                help@halodoc.com / 021-5095-9900
+                                help@halodoc.com / 021-5075-7700
                                 </a>
                             </p>
                             <p>
@@ -109,19 +109,19 @@ export default function Footer(props) {
                             <h6 className="text-uppercase fw-bold mb-4">
                                 Download App di
                             </h6>
-                            <p className="d-flex align-items-center">
+                            <p className="d-flex align-items-center justify-content-evenly">
                                 <a href={props.link1}>
-                                    <img src={props.app1} alt="" style={{ width: "50%", height: "50%", padding: "0 2px" }}></img>
+                                    <img src={props.app1} alt="" style={{ width: "70%", height: "70%"}}></img>
                                 </a>
                                 <a href={props.link2}>
-                                    <img src={props.app2} alt="" style={{ width: "45%", height: "45%", padding: "0 2px" }}></img>
+                                    <img src={props.app2} alt="" style={{ width: "70%", height: "70%"}}></img>
                                 </a>
                             </p>
                             <h6>
                                 Apakah kamu Dokter?
                             </h6>
                             <p>
-                                <MDBBtn className="d-flex align-items-center bg-danger" style={{ fontSize: "16px" }}>
+                                <MDBBtn className="d-flex align-items-center bg-danger" style={{ fontSize: "20px" }}>
                                     <img src={props.dok} alt="" style={{ paddingRight: "5px"}}></img>
                                     DAFTAR
                                 </MDBBtn>

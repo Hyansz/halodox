@@ -1,14 +1,7 @@
 import Navigation from "./Navbar";
 import Logo from "./../Assets/halodoc-logo.png";
 import Cards from "./Cards";
-import Dokter from "./../Assets/tanya-dokter.png"
-import ObatDokter from "./../Assets/obat-dokter.png"
-import JadwalDokter from "./../Assets/jadwal-dokter.png"
-import LabDokter from "./../Assets/lab-dokter.png"
-import SuntikObat from "./../Assets/suntik-obat.png"
 import Homebanner from "./../Assets/home-banner-v3.svg"
-import Asuransi from "./Asuransi";
-import Heal from "./../Assets/heal.png"
 import Layanan from "./Layanan";
 import Layanan1 from "./../Assets/layanan1.png";
 import Layanan2 from "./../Assets/layanan2.png";
@@ -36,18 +29,7 @@ import Diskon2 from "./../Assets/diskon2.jpeg";
 import Diskon3 from "./../Assets/diskon3.jpeg";
 import Artikel from "./Artikel";
 import NavArtikel from "./NavArtikel";
-import ArtikelItem from "./ArtikelItem";
-import Makan from "./../Assets/Makan.jpg"
-import Diagnosis from "./../Assets/diagnosis.jpg"
-import Merawat from "./../Assets/Merawat.jpg"
-import Skincare from "./../Assets/skincare.jpg"
 import Obat from "./Obat";
-import Obat1 from "./../Assets/obat1.png"
-import Obat2 from "./../Assets/obat2.png"
-import Obat3 from "./../Assets/obat3.png"
-import Obat4 from "./../Assets/obat4.png"
-import Obat5 from "./../Assets/obat5.png"
-import Lihat from "./Lihat";
 import Footer from "./Footer";
 import GFooter from "./../Assets/halodoc-footer-logo.svg"
 import Playstore from "./../Assets/google-play-badge.png"
@@ -63,43 +45,9 @@ const Main = () => {
                     <div className="row" style={{ padding: "50px 0"}}>
                         <div className="col-12">
                             <h1 style={{ fontSize: "32px" }} className="judul">Solusi Kesehatan Terlengkap</h1>
-                            <p style={{ fontSize: "14px" }}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar <br /> kesehatan, semua bisa di Halodoc!</p>
+                            <p style={{ fontSize: "14px" }}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc!</p>
                             <div className="row">
-                                <div style={{ width: "15%"}}>
-                                    <Cards 
-                                    image={Dokter} 
-                                    title="Tanya Dokter" 
-                                    link="https://www.halodoc.com/tanya-dokter"/>
-                                </div>
-                                <div style={{ width: "15%"}}>
-                                    <Cards 
-                                    image={ObatDokter} 
-                                    title="Toko Kesehatan" 
-                                    link="https://www.halodoc.com/obat-dan-vitamin"/>
-                                </div>
-                                <div style={{ width: "15%"}}>
-                                    <Cards 
-                                    image={JadwalDokter} 
-                                    title="Buat Janji RS"
-                                    link="https://www.halodoc.com/rumah-sakit"/>
-                                </div>
-                                <div style={{ width: "15%"}}>
-                                    <Cards 
-                                    image={LabDokter} 
-                                    title="Janji Medis"
-                                    link="https://www.halodoc.com/janji-medis"/>
-                                </div>
-                                <div style={{ width: "16%"}}>
-                                    <Cards 
-                                    image={SuntikObat} 
-                                    title="Layanan Home Lab"
-                                    link="https://www.halodoc.com/homelab/packages"/>
-                                </div>
-                            </div>
-                            <div className="row my-1">
-                                <div style={{ width: "30%"}}>
-                                    <Asuransi image={Heal}/>
-                                </div>
+                                <Cards />
                             </div>
                         </div>
                     </div>
@@ -270,38 +218,8 @@ const Main = () => {
             <div className="container my-5">
                 <div className="row" style={{ padding: "50px 0"}}>
                     <div className="col-12">
-                        <Artikel />
+                        <Artikel link="https://www.halodoc.com/artikel"/>
                         <NavArtikel />
-                        <div className="row py-2 my-3">
-                            <div style={{ width: "25%"}}>
-                                <ArtikelItem 
-                                image={Makan} 
-                                title="Tips Melaksanakan Puasa bagi Pengidap Bulimia dan Anoreksia" 
-                                desc="Bagi sebagian orang, berpuasa di bulan Ramadan bukanlah hal yang mudah..." 
-                                link="https://www.halodoc.com/artikel/tips-melaksanakan-puasa-bagi-pengidap-bulimia-dan-anoreksia"/>
-                            </div>
-                            <div style={{ width: "25%"}}>
-                                <ArtikelItem 
-                                image={Diagnosis}
-                                title="9 Jenis Tes untuk Memastikan Diagnosis Kanker Usus Besar"
-                                desc="Halodoc, Jakarta - Jangan pernah remehkan sembelit! Sebab, sembelit berkepanjangan..." 
-                                link="https://www.halodoc.com/artikel/9-jenis-tes-untuk-memastikan-diagnosis-kanker-usus-besar"/>
-                            </div>
-                            <div style={{ width: "25%"}}>
-                                <ArtikelItem 
-                                image={Merawat}
-                                title="Pentingnya Dukungan Keluarga dalam Merawat Pengidap Autisme"
-                                desc="Meski belum ada obatnya, intervensi yang tepat dalam merawat pengidap autisme..." 
-                                link="https://www.halodoc.com/artikel/pentingnya-dukungan-keluarga-dalam-merawat-pengidap-autisme-1"/>
-                            </div>
-                            <div style={{ width: "25%"}}>
-                                <ArtikelItem 
-                                image={Skincare}
-                                title="Cara Mengatasi Kulit Kering saat Puasa"
-                                desc="Kurangnya asupan cairan saat puasa dapat membuat kulit kering. Jangan khawatir..."
-                                link="https://www.halodoc.com/artikel/cara-mengatasi-kulit-kering-saat-puasa"/>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +229,8 @@ const Main = () => {
                         <h1 style={{ fontSize: "32px" }} className="judul">Obat Dan Vitamin</h1>
                         <p style={{ fontSize: "14px" }} >Dapatkan informasi seputar kandungan, aturan, petunjuk penggunaan obat dan vitamin di sini</p>
                         <div className="row my-4">
-                            <div className="p-3" style={{ width: "33%"}}>
+                            <Obat />
+                            {/* <div className="p-3" style={{ width: "33%"}}>
                                 <Obat 
                                 image={Obat1} 
                                 title="Obat & Perawatan" 
@@ -345,7 +264,7 @@ const Main = () => {
                                 <Lihat 
                                 title="Lihat Semua"
                                 link="https://www.halodoc.com/obat-dan-vitamin"/>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

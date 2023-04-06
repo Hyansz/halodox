@@ -19,7 +19,7 @@ const Artikel = (props) => {
                     >
                     </Nav>
                     <Form className="d-flex bg-white">
-                        <Button variant="white" className='py-1 px-2 text-danger' style={{ boxShadow: "none"}}>Lihat Semua</Button>
+                        <Button variant="white" className='py-1 px-2 text-danger' style={{ boxShadow: "none"}} href={props.link}>Lihat Semua</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
