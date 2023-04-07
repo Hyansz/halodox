@@ -6,136 +6,136 @@ import {
     MDBCardImage
 } from 'mdb-react-ui-kit';
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
-import Layanan1 from "./../Assets/layanan1.png";
-import Layanan2 from "./../Assets/layanan2.png";
-import Layanan3 from "./../Assets/layanan3.png";
-import Layanan4 from "./../Assets/layanan4.png";
-import Layanan5 from "./../Assets/layanan5.png";
-import Layanan6 from "./../Assets/layanan6.png";
-import Layanan7 from "./../Assets/layanan7.png";
-import Layanan8 from "./../Assets/layanan8.png";
-import Layanan9 from "./../Assets/layanan9.png";
-import Layanan10 from "./../Assets/layanan10.png";
+import Penunjang1 from "./../Assets/penunjang1.png";
+import Penunjang2 from "./../Assets/penunjang2.png";
+import Penunjang3 from "./../Assets/penunjang3.png";
+import Penunjang4 from "./../Assets/penunjang4.png";
+import Penunjang5 from "./../Assets/penunjang5.png";
+import Penunjang6 from "./../Assets/penunjang6.png";
+import Penunjang7 from "./../Assets/penunjang7.png";
+import Penunjang8 from "./../Assets/penunjang8.png";
+import Penunjang9 from "./../Assets/penunjang9.png";
+import Penunjang10 from "./../Assets/penunjang10.png";
 
-export default function Layanan(props) {
+export default function Penunjang(props) {
     return (
         <MDBContainer>
             <MDBRow className="mb-3">
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/tanya-bidan">
+                    <a href={props.link1}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan1} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang1} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Layanan Bidan 
+                                        Cek Stres
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/janji-medis/departemen/covid-19-test">
+                    <a href={props.link2}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan2} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang2} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Tes COVID-19
+                                        Kalender Menstruasi
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/diabetic-care-id/">
+                    <a href={props.link3}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan3} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang3} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Perawatan Diabetes
+                                        Kalkulator BMI
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/kesehatan-jantung/">
+                    <a href={props.link4}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan4} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang4} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Kesehatan Jantung
+                                        Kalender Kehamilan
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/janji-medis/departemen/vaksinasi-covid-19">
+                    <a href={props.link5}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan5} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang5} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Vaksinasi COVID-19
+                                        Risiko Jantung
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://health.halodoc.com/skin-health-id/">
+                    <a href={props.link6}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan6} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang6} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Kesehatan Kulit
+                                        Risiko Diabetes
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://health.halodoc.com/sexual-health-id/">
+                    <a href={props.link7}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan7} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang7} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Kesehatan Seksual
+                                        Pengingat Obat 
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/kesehatan-mental">
+                    <a href={props.link8}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan8} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang8} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Kesehatan Mental
+                                        Donasi 
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/tanya-dokter/kategori/dokter-hewan">
+                    <a href={props.link9}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan9} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Penunjang9} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Kesehatan Hewan
+                                        Tes Depresi 
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
                     </a>
                 </MDBCol>
                 <MDBCol className="mb-5">
-                    <a href="https://www.halodoc.com/parent-homepage-id/">
+                    <a href={props.link10}>
                         <MDBCard className="text-center" style={{ width: "100%", height: "88px", border: "none", boxShadow: "none", color: "black" }}>
-                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={Layanan10} alt='image' position='top' />
+                            <MDBCardImage style={{ width: "48px", height: "48px", margin: "auto" }} src={[Penunjang10]} alt='image' position='top' />
                                 <MDBCardBody>
                                     <MDBCardText style={{ fontSize: "12px", fontWeight: "400" }}>
-                                        Parenting
+                                        Tes Gangguan Kecemasan 
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBCard>
