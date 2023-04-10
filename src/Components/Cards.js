@@ -33,7 +33,9 @@ export default function Cards(props) {
                 <MDBCol md="2">
                     <a href="https://www.halodoc.com/tanya-dokter">
                         <Card className="text-center py-2" style={{ width: "100%", height: "85%", border: "1px solid grey", color: "black" }}>
-                            <Card.Img variant="top" src={Dokter} style={{ width: "75px", height: "75px", margin: "auto" }} />
+                            <div className="row p-0 m-0">
+                                <Card.Img variant="top" src={Dokter} style={{ width: "90px", height: "70px", margin: "auto" }} />
+                            </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "14px", fontWeight: "600"}}>
                                     Tanya Dokter
@@ -45,7 +47,9 @@ export default function Cards(props) {
                 <MDBCol md="2">
                     <a href="https://www.halodoc.com/obat-dan-vitamin">
                         <Card className="text-center py-2" style={{ width: "100%", height: "85%", border: "1px solid grey", color: "black" }}>
-                            <Card.Img variant="top" src={ObatDokter} style={{ width: "75px", height: "75px", margin: "auto" }} />
+                            <div className="row p-0 m-0">
+                                <Card.Img variant="top" src={ObatDokter} style={{ width: "90px", height: "70px", margin: "auto" }} />
+                            </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "14px", fontWeight: "600"}}>
                                     Toko Kesehatan
@@ -57,7 +61,9 @@ export default function Cards(props) {
                 <MDBCol md="2">
                     <a href="https://www.halodoc.com/rumah-sakit">
                         <Card className="text-center py-2" style={{ width: "100%", height: "85%", border: "1px solid grey", color: "black" }}>
-                            <Card.Img variant="top" src={JadwalDokter} style={{ width: "75px", height: "75px", margin: "auto" }} />
+                            <div className="row p-0 m-0">
+                                <Card.Img variant="top" src={JadwalDokter} style={{ width: "90px", height: "70px", margin: "auto" }} />
+                            </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "14px", fontWeight: "600"}}>
                                     Buat Janji RS
@@ -69,7 +75,9 @@ export default function Cards(props) {
                 <MDBCol md="2">
                     <a href="https://www.halodoc.com/janji-medis">
                         <Card className="text-center py-2" style={{ width: "100%", height: "85%", border: "1px solid grey", color: "black" }}>
-                            <Card.Img variant="top" src={LabDokter} style={{ width: "75px", height: "75px", margin: "auto" }} />
+                            <div className="row p-0 m-0">
+                                <Card.Img variant="top" src={LabDokter} style={{ width: "90px", height: "70px", margin: "auto" }} />
+                            </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "14px", fontWeight: "600"}}>
                                     Janji Medis
@@ -81,7 +89,9 @@ export default function Cards(props) {
                 <MDBCol md="2">
                     <a href="https://www.halodoc.com/homelab/packages">
                         <Card className="text-center py-2" style={{ width: "100%", height: "85%", border: "1px solid grey", color: "black" }}>
-                            <Card.Img variant="top" src={SuntikObat} style={{ width: "75px", height: "75px", margin: "auto" }} />
+                            <div className="row p-0 m-0">
+                                <Card.Img variant="top" src={SuntikObat} style={{ width: "90px", height: "70px", margin: "auto" }} />
+                            </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "14px", fontWeight: "600"}}>
                                     Layanan Home Lab
@@ -91,8 +101,8 @@ export default function Cards(props) {
                     </a>
                 </MDBCol>
             </MDBRow>
-            <MDBRow className="mb-3">
-                <MDBCol sm="4">
+            <MDBRow className="mb-3 row">
+                <MDBCol sm="4" className="row p-0 m-0">
                     <Asuransi />
                 </MDBCol>
             </MDBRow>

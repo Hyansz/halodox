@@ -17,15 +17,19 @@ import Penunjang from "./Penunjang";
 const Main = () => {
     return (
         <div>
-            <Navigation image={Logo}/>
-            <div style={{ backgroundImage: `url(${Homebanner})`, backgroundRepeat: "no-repeat", backgroundPosition: "right bottom", backgroundSize: "cover"}}>
-                <div className="container">
-                    <div className="row" style={{ padding: "50px 0"}}>
-                        <div className="col-12">
-                            <h1 style={{ fontSize: "32px" }} className="judul">Solusi Kesehatan Terlengkap</h1>
-                            <p style={{ fontSize: "14px" }}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc!</p>
-                            <div className="row">
-                                <Cards />
+            <div>
+                <Navigation image={Logo}/>
+                <div style={{ backgroundImage: `url(${Homebanner})`, backgroundRepeat: "no-repeat", backgroundPosition: "right", backgroundSize: "cover", padding: "50px"}}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="row col-6 px-3">
+                                    <h1 style={{ fontSize: "32px" }} className="judul">Solusi Kesehatan Terlengkap</h1>
+                                    <p style={{ fontSize: "14px" }}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc!</p>
+                                </div>
+                                <div className="row">
+                                    <Cards />
+                                </div>
                             </div>
                         </div>
                     </div>
