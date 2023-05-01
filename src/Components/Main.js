@@ -23,7 +23,7 @@ const Main = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <div className="row col-6 px-3">
+                                <div className="row col-6 px-0">
                                     <h1 style={{ fontSize: "32px" }} className="judul">Solusi Kesehatan Terlengkap</h1>
                                     <p style={{ fontSize: "14px" }}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc!</p>
                                 </div>
